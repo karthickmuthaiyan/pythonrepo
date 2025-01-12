@@ -26,7 +26,8 @@ def echo(text: str, repetitions: int = 3) :
 if __name__ == "__main__":
     text = " ".join(sys.argv[1:])
     print(echo(text))
-"""
+
+
 class Rectangle: 
     def __init__(self,length,width):
         self.length=length
@@ -45,3 +46,19 @@ s=Square(4)
 s.getarea()
 s=Rectangle(4,8)
 s.getarea()
+
+"""
+
+import sys
+randomlist=['a',0,2,4]
+for entry in randomlist:
+    try:
+        print ("The entry is:",entry)
+        r=1/entry
+        print("The reciprocal of ",entry," is",r)
+        print("Next execution")
+        print()
+    except:
+        print("Error occured:",sys.exc_info()[0]," OCCURED")
+        print("Next execution")
+        print()
